@@ -4,7 +4,7 @@
 <div class="container" style="height: auto;">
     <div class="row align-items-center">
         <div class="col-md-9 ml-auto mr-auto mb-3 text-center">
-            <h3>{{ __('Log in here.') }}</h3>
+            <h3>{{ __('Login primero por favor.') }}</h3>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
             <form class="form" method="POST" action="{{ route('login') }}">
@@ -26,24 +26,8 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <p class="card-description text-center">{{ __('Enter your credentials ') }}</p>
-                        {{-- <div class="bmd-form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="material-icons">email</i>
-                                    </span>
-                                </div>
-                                <input type="email" name="email" class="form-control" placeholder="{{ __('Email...') }}"
-                                    value="{{ old('email', null) }}" required autocomplete="email" autofocus>
-                            </div>
-                            @if ($errors->has('email'))
-                            <div id="email-error" class="error text-danger pl-3" for="email" style="display: block;">
-                                <strong>{{ $errors->first('email') }}</strong>
-                            </div>
-                            @endif
-                        </div> --}}
-                        {{-- Username --}}
+                        <p class="card-description text-center">{{ __('INGRESA TUS CREDENCIALES ') }}</p>
+
                         <div class="bmd-form-group{{ $errors->has('username') ? ' has-danger' : '' }}">
                             <div class="input-group">
                                 <div class="input-group-prepend">
@@ -51,7 +35,7 @@
                                         <i class="material-icons">face</i>
                                     </span>
                                 </div>
-                                <input type="text" name="username" class="form-control" placeholder="{{ __('Username or Email...') }}"
+                                <input type="text" name="username" class="form-control" placeholder="{{ __('Usuario o Email...') }}"
                                     value="{{ old('username', null) }}" required autocomplete="username" autofocus>
                             </div>
                             @if ($errors->has('username'))
@@ -68,7 +52,7 @@
                                     </span>
                                 </div>
                                 <input type="password" name="password" id="password" class="form-control"
-                                    placeholder="{{ __('Password...') }}" required autocomplete="current-password">
+                                    placeholder="{{ __('Contraseña...') }}" required autocomplete="current-password">
                             </div>
                             @if ($errors->has('password'))
                             <div id="password-error" class="error text-danger pl-3" for="password"
@@ -80,7 +64,7 @@
                         <div class="form-check mr-auto ml-3 mt-3">
                             <label class="form-check-label">
                                 <input class="form-check-input" type="checkbox" name="remember"
-                                    {{ old('remember') ? 'checked' : '' }}> {{ __('Remember me') }}
+                                    {{ old('remember') ? 'checked' : '' }}> {{ __('Recordarme') }}
                                 <span class="form-check-sign">
                                     <span class="check"></span>
                                 </span>
@@ -88,7 +72,7 @@
                         </div>
                     </div>
                     <div class="card-footer justify-content-center">
-                        <button type="submit" class="btn btn-primary btn-link btn-lg">{{ __('Log in') }}</button>
+                        <button type="submit" class="btn btn-primary btn-link btn-lg">{{ __('Ingresar') }}</button>
                     </div>
                 </div>
             </form>
