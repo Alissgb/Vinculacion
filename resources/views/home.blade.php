@@ -1,6 +1,8 @@
-@extends('layouts.app', ['class' => 'off-canvas-sidebar', 'activePage' => 'home', 'title' => __('Material Dashboard')])
+@extends('layouts.app')
 
 @section('content')
+@endsection
+
 <link rel="stylesheet" href="{{asset('static/css/sidebar.css')}}">
 <body>
 	<header class="header">
@@ -37,4 +39,4 @@
 </div>
 </body>
 </html>
-@endsection
+
