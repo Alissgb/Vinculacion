@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Menù Lateral con Css</title>
-	<link rel="stylesheet" href="{{asset('static/css/sidebar.css')}}">
-</head>
+@extends('layouts.app', ['class' => 'off-canvas-sidebar', 'activePage' => 'home', 'title' => __('Material Dashboard')])
+
+@section('content')
+<link rel="stylesheet" href="{{asset('static/css/sidebar.css')}}">
 <body>
 	<header class="header">
 		<div class="container">
@@ -40,3 +37,4 @@
 </div>
 </body>
 </html>
+@endsection
